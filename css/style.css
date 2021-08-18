@@ -1,15 +1,24 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf') format('ttf'),
+  src: url('../fonts/Roboto-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url('../fonts/Roboto-Bold.ttf') format('ttf'),
+  src: url('../fonts/Roboto-Bold.ttf') format('ttf');
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -46,20 +55,17 @@ body {
   padding: 0px;
   width: 672px;
   font-size: 16px;
+  line-height: 19px;
   text-align: center;
   list-style: none;
 }
 
-/*.nav li:last-child a {
-  padding-right: 0px;
-}*/
-
-.nav a:hover {
+.nav-links:hover {
   background-color: #3596F5;
   box-shadow: 0px 4px 0px 0px rgba(53,150,245,1);
 }
 
-.nav a {
+.nav-links {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -70,7 +76,7 @@ body {
   display: none;
 }
 
-.telephon {
+.phone {
   display: block;
   display: flex;
   justify-content: flex-start;
@@ -82,7 +88,7 @@ body {
   padding-right: 0px;
 }
 
-.telephon a {
+.phonenumber {
   text-decoration: none;
   color: #ffffff;
 }
@@ -93,6 +99,8 @@ body {
   padding-top: 8px;
   padding-left: 20px;
   font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
   text-align: right;
 }
 
@@ -100,5 +108,77 @@ body {
   margin: 0px;
   margin-top: 4px;
   font-size: 17px;
+  font-style: normal;
   font-weight: bold;
+}
+
+.main {
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-left: 12px;
+  text-align: center;
+}
+
+.main-title {
+  margin: 0px;
+  margin-top: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 44px;
+  color: #635854;
+}
+
+.choice-floor {
+  opacity: 0;
+}
+
+.choice-floor:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.counter-arrow-down {
+  transform: rotateX(180deg);
+}
+
+.counter {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #635854;
+  font-size: 104px;
+  ;
+}
+
+.button-primary {
+  margin-bottom: 68px;
+  padding: 16px 36px;
+  cursor: pointer;
+  background: #3596F5;
+  border-radius: 6px;
+  color: #ffffff;
+  border: none;
 }

@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("BebasNeueRegular"),
+    url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: Roboto, arial, sans-serif;
+}
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1440px;
+  min-width: 1440px;
+  min-height: 56px;
+  background-color: #635854;
+  border-bottom: 4px solid #3596f5;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.logo {
+  display: block;
+  width: 120px;
+  height: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 80px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  margin-left: 184px;
+  padding: 0px;
+  width: 672px;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-links:hover {
+  background-color: #3596f5;
+  box-shadow: 0px 4px 0px 0px rgba(53, 150, 245, 1);
+}
+
+.nav-links {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.phone {
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0px;
+  margin-right: 80px;
+  margin-left: 163px;
+  padding-right: 0px;
+}
+
+.phonenumber {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-tel {
+  display: block;
+  margin: 0px;
+  padding-top: 8px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+}
+
+.nav-telnumber {
+  margin: 0px;
+  margin-top: 4px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  margin-left: 12px;
+  text-align: center;
+}
+
+.main-title {
+  margin: 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 44px;
+  color: #635854;
+}
+
+.choice-floor {
+  opacity: 0;
+}
+
+.choice-floor:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.counter-arrow-down {
+  transform: rotate(180deg);
+}
+
+.counter {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #635854;
+  font-size: 104px;
+}
+
+.button-primary {
+  margin-bottom: 20px;
+  padding: 16px 36px;
+  cursor: pointer;
+  background-color: #3596f5;
+  border-radius: 6px;
+  color: #ffffff;
+  border: none;
+}

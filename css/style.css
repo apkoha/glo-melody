@@ -28,14 +28,17 @@ body {
 }
 
 .top-line {
+  min-width: 1280px;
+  background-color: #635854;
+  border-bottom: 4px solid #3596f5;
+}
+
+.top-line-content {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  width: 1440px;
-  min-width: 1440px;
+  width: 1280px;
   min-height: 56px;
-  background-color: #635854;
-  border-bottom: 4px solid #3596f5;
   font-size: 16px;
   color: #ffffff;
 }
@@ -46,16 +49,17 @@ body {
   height: 32px;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-left: 80px;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   margin: 0px;
-  margin-left: 184px;
+  margin-left: 84px;
   padding: 0px;
   width: 672px;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -86,7 +90,6 @@ body {
   flex-wrap: wrap;
   margin: 0px;
   margin-right: 80px;
-  margin-left: 163px;
   padding-right: 0px;
 }
 
@@ -144,6 +147,7 @@ body {
   color: #635854;
 }
 
+/*селектор по тегу*/
 path.current-floor {
   opacity: 1;
 }
@@ -282,16 +286,12 @@ path.current-floor {
   color: #635854;
 }
 
-.flat-link:hover {
-  color: #3596f5;
-  text-decoration: underline;
-}
-
 .current-flat {
   color: #3596f5;
   text-decoration: underline;
 }
 
+/*селектор по тегу*/
 path.current-flat {
   opacity: 1;
 }
@@ -311,12 +311,15 @@ path.current-flat {
 }
 
 .footer {
+  border-top: 4px solid #3596f5;
+  background-color: #d7d7d7;
+}
+
+.footer-content {
   width: 1440px;
   max-width: 1440px;
   min-height: 172px;
   margin: auto;
-  border-top: 4px solid #3596f5;
-  background-color: #d7d7d7;
 }
 
 .footer-place {
@@ -367,19 +370,19 @@ path.current-flat {
 }
 
 .facebook-link {
-  background-image: url("../img/Icon-facebook.png");
+  background-image: url("../img/icon-facebook.png");
 }
 
 .instagram-link {
-  background-image: url("../img/Icon-instagram.png");
+  background-image: url("../img/icon-instagram.png");
 }
 
 .twitter-link {
-  background-image: url("../img/Icon-twitter.png");
+  background-image: url("../img/icon-twitter.png");
 }
 
 .youtube-link {
-  background-image: url("../img/Icon-youtube.png");
+  background-image: url("../img/icon-youtube.png");
 }
 
 .footer-nav {
